@@ -3,8 +3,7 @@
 ==================================== */
 
 * {
-   box-sizing: border-box;
-   
+   box-sizing: border-box; 
 }
 
 body {
@@ -21,7 +20,9 @@ p {
 
 h2,
 h3,
-a {
+h4,
+a,
+p{
    color: #093a58;
 }
 
@@ -29,11 +30,7 @@ h2,
 h3,
 h4,
 h5 {
-   margin-top: 0;
-}
-
-h4 {
-   margin-bottom: .4em;
+   margin: 0 auto;
 }
 
 a {
@@ -53,12 +50,8 @@ img {
 /* ---- Navigation ---- */
 
 .name {
-   font-size: 1em;
-   color: #093a58;   
-}
-
-.name h2 {
-   margin: 0 auto;
+   font-size: 1.2em;
+      padding-bottom: 10px
 }
 
 .main-nav {
@@ -67,20 +60,21 @@ img {
    height: 20px;
    text-transform: uppercase;
    padding: 0;
-   display: block;   
+   display: block;
+   margin: 10px;
 }
 
 .main-nav a {
-  color: #2ea49b;
-   padding: 0 5px;
+   color: #2ea49b;
+   padding: 3px 6px;
 }
 
 .main-nav li {
-   display: inline-block;  
+   display: inline-block;
 }
 
 .main-nav a.selected {
-   color: #1d6761;
+   color:burlywood;
 }
 
 .main-nav a:hover {
@@ -94,7 +88,7 @@ img {
    padding: 8px;
    background-color: #fff;
    text-align: center;
-   height: 120px;
+   height: 135px;
    background: url('http://bgfons.com/upload/paper_texture327.jpg') no-repeat top center;
   }
 
@@ -231,7 +225,7 @@ figure img {
 @media (min-width: 680px) {
 
    body {
-    padding-top: 75px;
+    padding-top: 85px;
    }
 
    .main-header {
@@ -240,7 +234,7 @@ figure img {
       width: 100%;
       top: 0;
       z-index: 1000;
-      height: 75px;
+      height: 85px;
       padding-top: 5px
    }
    
@@ -255,17 +249,23 @@ figure img {
       float: left;
    }
    
+   .name {
+      padding-bottom: 4px
+   }
+   
    .col {
       text-align: left;
    }
    
    .main-nav {
       float: right;
+      padding: 10px 0 20px;
+      font-size: .95em   
    }
 
    .main-nav li {
       display:inline-block ;
-      padding: 10px;
+      padding: 5px;
    } 
    
    .headshot {
@@ -302,8 +302,7 @@ figure img {
    
    .contact {
       width: 27%;
-      display:inline-block;
-      
+      display:inline-block;   
    }
    
    .contact-info li {
