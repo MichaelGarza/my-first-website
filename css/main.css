@@ -100,7 +100,7 @@ img {
 
 .banner {
    color: #fff;
-   background: url('http://photos1.blogger.com/blogger/4295/686/1600/Untitled-Scanned-01.jpg') no-repeat top center ;
+   background: url('http://photos1.blogger.com/blogger/4295/686/1600/Untitled-Scanned-01.jpg') no-repeat top center;
    background-size: cover;
    overflow: hidden;
    padding: 3.5em 0;
@@ -108,15 +108,20 @@ img {
 }
 
 .col,
-.proj,
 .referral,
 .contact {
    padding-left: 1.5em;
    padding-right: 1.5em;
    list-style: none;
-   text-align: center;
-   
+   text-align: center; 
   }
+
+.proj {
+   padding-left: 2em;
+   padding-right: 2em;
+   list-style: none;
+   text-align: center;
+}
 
 .col h2,
 .proj h2,
@@ -130,18 +135,17 @@ img {
    margin-top: 5px;   
 }
 
-
 iframe {
    border: 4px solid white;
-   width: 80%;
-   margin-top: 10px
+   margin-top: 10px;
+   max-width: 250px;
 }
 
 
 /* ---- Page Elements ---- */
 
 .headshot {
-   border: 2px solid #111;
+   border: 3px solid black;
    width: 125px;
    height: 140px;
    border-radius: 50%;
@@ -238,6 +242,10 @@ figure img {
       padding-top: 5px
    }
    
+   .banner {
+      height: 350px;
+   }
+   
    .container {
       width: 90%;
       margin: 0 auto;
@@ -259,18 +267,18 @@ figure img {
    
    .main-nav {
       float: right;
-      padding: 10px 0 20px;
-      font-size: .95em   
+      padding: 10px 0 20px;   
    }
 
    .main-nav li {
-      display:inline-block ;
-      padding: 5px;
+      padding-left: 10px;
+      font-size: 1.1em
    } 
    
    .headshot {
       width: 125px;
-      height: 140px;   
+      height: 140px;
+      margin-top: 20px
    } 
    
    
@@ -347,10 +355,6 @@ figure img {
       height: 165px;
    }
    
-   .proj {
-		width: 30%;
-	}
-   
    .secondary {
       width: 25%;
       padding: 0 10px;
@@ -364,6 +368,10 @@ figure img {
    .tertiary {
       width: 50%;
       padding: 0 10px; 
+   }
+   
+   .proj {
+      width: 33.3%;
    }
    
    .general {
