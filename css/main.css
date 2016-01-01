@@ -49,24 +49,32 @@ img {
 
 /* ---- Navigation ---- */
 
+
+
+.name img {
+   max-width: 38px; 
+}
+
 .name {
    font-size: 1.2em;
-      padding-bottom: 10px
+   padding-bottom: 10px;
+   display: block
 }
 
 .main-nav {
+   clear: both
    list-style: none;
    font-size: .85em;
    height: 20px;
    text-transform: uppercase;
    padding: 0;
-   display: block;
+   display: inline-block;
    margin: 10px;
 }
 
 .main-nav a {
    color: #2ea49b;
-   padding: 3px 6px;
+   padding: 3px 3px ;
 }
 
 .main-nav li {
@@ -113,7 +121,7 @@ img {
    padding-left: 1.5em;
    padding-right: 1.5em;
    list-style: none;
-   text-align: center; 
+   text-align: center;
   }
 
 .proj {
@@ -162,8 +170,8 @@ iframe {
 }
 
 figure img {
-   max-width: 125px;
-   max-height: 125px;
+   max-width: 100px;
+   max-height: 100px;
    margin-top: 10px
 }
   
@@ -173,11 +181,12 @@ figure img {
 }
 
 .contact-info {
-   padding: 5px;
+   padding: 3px 5px 0 0;
+   font-size: .9em
 }
 
 .contact-logo {
-   width: 1.5em;
+   width: 1.8em;
    padding: 0 4px; 
 }
 
@@ -267,7 +276,7 @@ figure img {
    
    .main-nav {
       float: right;
-      padding: 10px 0 20px;   
+      padding: 20px 0 20px;   
    }
 
    .main-nav li {
@@ -379,7 +388,7 @@ figure img {
    }
    
     .contact-info li {
-      padding: 8px;
+      padding-bottom: 10px;
    }
 
 	.clearfix::after {
