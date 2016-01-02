@@ -49,36 +49,26 @@ img {
 
 /* ---- Navigation ---- */
 
-
-
-.name img {
-   max-width: 38px; 
-}
-
 .name {
    font-size: 1.2em;
-   padding-bottom: 10px;
-   display: block
+   text-align: center
 }
 
 .main-nav {
-   clear: both
-   list-style: none;
-   font-size: .85em;
-   height: 20px;
+   font-size: .8em;
+   list-style-type: none;
    text-transform: uppercase;
-   padding: 0;
-   display: inline-block;
-   margin: 10px;
+   text-align: center;
+   padding: 0; 
 }
 
 .main-nav a {
    color: #2ea49b;
-   padding: 3px 3px ;
 }
 
 .main-nav li {
    display: inline-block;
+   padding: 10px 7px;
 }
 
 .main-nav a.selected {
@@ -93,26 +83,21 @@ img {
 /* ---- Layout Containers ---- */
 
 .main-header {
-   padding: 8px;
    background-color: #fff;
-   text-align: center;
    height: 135px;
    background: url('http://bgfons.com/upload/paper_texture327.jpg') no-repeat top center;
-  }
-
-.banner,
-.main-footer {
-   text-align: center;
-   clear: both;
+   padding-top: 5px
   }
 
 .banner {
    color: #fff;
-   background: url('http://photos1.blogger.com/blogger/4295/686/1600/Untitled-Scanned-01.jpg') no-repeat top center;
-   background-size: cover;
+   background: url('http://photos1.blogger.com/blogger/4295/686/1600/Untitled-Scanned-01.jpg') no-repeat center center;
+   background-size:cover;
    overflow: hidden;
-   padding: 3.5em 0;
-   margin-bottom: 35px;
+   height: 190px;
+   padding: 5em;
+   clear: both;
+   text-align: center;
 }
 
 .col,
@@ -120,6 +105,7 @@ img {
 .contact {
    padding-left: 1.5em;
    padding-right: 1.5em;
+   padding-top: 2em;
    list-style: none;
    text-align: center;
   }
@@ -127,6 +113,7 @@ img {
 .proj {
    padding-left: 2em;
    padding-right: 2em;
+   padding-top: 2em;
    list-style: none;
    text-align: center;
 }
@@ -140,7 +127,7 @@ img {
 
 .col p,
 .proj p {
-   margin-top: 5px;   
+   margin-top: 5px;
 }
 
 iframe {
@@ -152,7 +139,8 @@ iframe {
 
 /* ---- Page Elements ---- */
 
-.headshot {
+/*****
+.headshot { 
    border: 3px solid black;
    width: 125px;
    height: 140px;
@@ -160,13 +148,14 @@ iframe {
    }
 
 .headshot:hover {
-   transform: scale(1.2) rotate(5deg);
+   transform: scale(1.3) rotate(20deg);
 }
-
+ *****/
+   
 .referral {
-   width: 50%;
+   width: 55%;
    float: left;
-   margin-bottom: 20px;
+   padding-right: 5px;
 }
 
 figure img {
@@ -176,12 +165,13 @@ figure img {
 }
   
 .contact {
-   width: 50%;
+   width: 45%;
    float: right;
+   padding-left: 5px;
 }
 
 .contact-info {
-   padding: 3px 5px 0 0;
+   padding: 0;
    font-size: .9em
 }
 
@@ -192,8 +182,9 @@ figure img {
 
 .contact-info li {
    list-style: none;
-   padding-bottom: 15px;
-   font-size: .9em
+   padding-bottom: 13px;
+   font-size: .9em;
+   display: block
 }
 
 .main-footer {
@@ -203,30 +194,31 @@ figure img {
    padding: 30px 0 30px 0;
    margin-top: 30px;
    clear: both;
-}
-
-.main-footer .copyright {
-   top: -8px;
-   font-size: .75em;
-   margin: 0;
-   padding-top: 10px;
-   color: black
+   text-align: center;
 }
 
 .main-footer ul {
    list-style-type: none;
    margin: 0;
-   padding: 5px 0 0;
+   padding: 0;
+   display: inline-block
 }
 
 .main-footer img {
-   width: 2.5em;
+   width: 2.6em;
 }
 
-.main-footer div {
-   font-size: .5em;
+.icons {
+   font-size: .75em;
    width: 90%;
    margin: 0 auto;
+}
+
+
+.copyright {
+   font-size: .9em;
+   margin: 0;
+   color: black
 }
 
 
@@ -243,16 +235,15 @@ figure img {
 
    .main-header {
       position: fixed;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+      box-shadow: 0 1px 20px rgba(0, 0, 0, .4);
       width: 100%;
       top: 0;
       z-index: 1000;
       height: 85px;
-      padding-top: 5px
    }
    
    .banner {
-      height: 350px;
+      height: 275px
    }
    
    .container {
@@ -265,10 +256,7 @@ figure img {
    .proj {
       float: left;
    }
-   
-   .name {
-      padding-bottom: 4px
-   }
+
    
    .col {
       text-align: left;
@@ -276,20 +264,12 @@ figure img {
    
    .main-nav {
       float: right;
-      padding: 20px 0 20px;   
    }
 
    .main-nav li {
-      padding-left: 10px;
-      font-size: 1.1em
+      padding: 15px;
+      font-size: 1.2em;
    } 
-   
-   .headshot {
-      width: 125px;
-      height: 140px;
-      margin-top: 20px
-   } 
-   
    
    .proj {
       width: 50%;   
@@ -303,14 +283,10 @@ figure img {
    .general {
       width: 50%;
       float: left;
-      display: inline-block;
-      
    }
    
    .referral {
-      width: 23%;
-      display: inline-block;
-      padding: 0;
+      width: 25%;
    }
    
    .referral img {
@@ -318,25 +294,14 @@ figure img {
    }
    
    .contact {
-      width: 27%;
-      display:inline-block;   
+      width: 25%;    
    }
    
    .contact-info li {
       padding-bottom: 10px;
       font-size: .95em;
    }
-   
-   
-   
-   .tertiary {
-      padding-top: 10px
-   }
-   
-   .main-footer img {
-   width: 2em;
-}
-   
+      
 
 /* ---- Float clearfix ---- */
 
@@ -356,27 +321,15 @@ figure img {
       width: 80%;
       max-width: 1150px;
       margin: 0 auto;
-      padding: 0 0 0 10px;
 	}
-
-   .headshot {
-      width: 150px;
-      height: 165px;
-   }
    
-   .secondary {
-      width: 25%;
-      padding: 0 10px;
-   }
-   
+   .secondary,
    .primary {
       width: 25%;
-      padding: 0 10px;
    }
-   
+    
    .tertiary {
-      width: 50%;
-      padding: 0 10px; 
+      width: 50%; 
    }
    
    .proj {
@@ -390,13 +343,6 @@ figure img {
     .contact-info li {
       padding-bottom: 10px;
    }
-
-	.clearfix::after {
-		content: " ";
-		display: table;
-		clear: both;
-	}
-   
 
 }
    
