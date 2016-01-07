@@ -96,12 +96,14 @@ iframe {
 /* ---- Layout Containers ---- */
 
 
-.container {
+.container-one,
+.container-two {
    padding-left: 1em;
    padding-right: 1em;
 }
 
-.container ul {
+.container-one ul,
+.container-two ul{
    padding: 0;
 }
 
@@ -119,7 +121,6 @@ iframe {
 .referral,
 .general,
 .contact {
-   list-style: none;
    text-align: center;
   }
 
@@ -130,7 +131,7 @@ iframe {
 
 .secondary,
 .one,
-.general{
+.general {
    padding-top: 3em;
 }
 
@@ -173,27 +174,39 @@ iframe {
    padding-right: 2em
 }
 
+
 figure img {
-   max-width: 175px;
    margin-top: 10px;
-   box-shadow: 0 0 15px rgba(0, 0, 0, .4);   
+   box-shadow: 0 0 15px rgba(0, 0, 0, .4);
+   border-radius: 10px;
+   width: 200px;
 }
-  
+
+.contact h2 {
+   padding-bottom: 20px
+}
+
 .contact-info {
-   padding: 0 ;
-   font-size: 1.3em
+   width: 240px;
+   margin: 0 auto;
 }
 
-.contact-logo {
-   width: 1.7em;
-   padding: 0 4px; 
-}
-
-.contact-info li {
-   list-style: none;
-   padding-bottom: 10px;
-   font-size: .9em;
+.contact li {
    display: block;
+   margin: 10px 30px 10px 30px;
+   background: #fff;
+   padding: 5px;
+   border-radius: 5px;
+   box-shadow: 0 0 6px rgba(0, 0, 0, .4);
+}
+
+.contact img {
+   width: 25px;
+   margin-right: 5px;
+}
+
+.contact a {
+   font-size: 1.2em
 }
 
 .main-footer {
@@ -270,7 +283,8 @@ figure img {
       box-shadow: none;
    } 
 
-   .container {
+   .container-one,
+   .container-two,{
       width: 100%;
       margin: 0 auto;
       padding-left: 1.5em;
@@ -298,15 +312,6 @@ figure img {
    .general {
       padding-left: 4em;
       padding-right: 4em;
-   }
-   
-   .referral img {
-      max-width: 300px;
-   }
-   
-   .contact-info li {
-      padding-bottom: 15px;
-      font-size: .95em;
    }
    
    .two {
@@ -359,15 +364,19 @@ figure img {
       height: 100px;
       background: url('http://bgfons.com/upload/paper_texture327.jpg') no-repeat top center;
       padding-top: 5px;
-   
-  }
-   
+   }
    
    .main-nav li {
       display: inline-block;
       padding: 30px 0;
       font-size: 1.1em;
-   }  
+   } 
+   
+   .container-one,
+   .container-two {
+      padding-left: 2em;
+      padding-right: 2em;
+   }
    
    .secondary,
    .primary,
@@ -394,21 +403,17 @@ figure img {
       padding-top: 3em;
    }
    
-   .referral img {
-      max-width: 200px
+   .contact li {
+      padding: 8px
    }
    
-   .contact li {
-      padding-top: 5px
-   }
    
 }
 
 @media (min-width: 1100px) {
    
-   .container {
-      padding-left: 2em;
-      padding-right: 2em;
+   .container-one,
+   .container-two {
       max-width: 1100px;
       margin: 0 auto;
 	}
@@ -434,20 +439,18 @@ figure img {
    
    .general {
      float: left;
-     width: 48%; 
+     width: 40%; 
    }
    
    .secondary,
    .primary,
    .referral,
    .contact {
-      width: 26%;
+      width: 30%;
       padding-bottom: 3em;
    }
    
-    .contact-info li {
-      padding-bottom: 10px;
-   }
+    
    
    .tertiary,
    .three,
