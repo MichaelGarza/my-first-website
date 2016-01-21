@@ -1,0 +1,294 @@
+
+ul#css3menu0,
+ul#css3menu0 ul {
+   margin:0;
+   list-style:none;
+   padding: 0;
+   background-color:#dedede;  
+   /*-----
+   -moz-border-radius:5px;
+   -webkit-border-radius:5px;
+   border-radius: 5px;
+   ----*/
+}
+ 
+ul#css3menu0 ul{
+   display:none;
+   position:absolute;
+   left:0;
+   top:100%;
+   -moz-box-shadow:0 0 5px #000000;
+   -webkit-box-shadow:0 0 5px #000000;
+   box-shadow:0 0 5px #000000;
+   background-color:rgba(255,255,255, .20);
+   /*-----
+   border-radius:5px;
+   -moz-border-radius:5px;
+   -webkit-border-radius:5px;
+   -----*/
+   border-color:#093a58;
+   padding:0 10px 10px;
+}
+
+l#css3menu0 .topfirst ul {
+   left: 0;
+}
+
+ul#css3menu0 .topmenu ul {
+   left: -40%;
+}
+
+ul#css3menu0 .toplast ul {
+   left:-122%;  
+}
+
+ul#css3menu0 .topfirst ul ul {
+   left: 90%;  
+}
+
+ul#css3menu0 .topmenu ul ul {
+   left: -60%;
+}
+
+ul#css3menu0 .toplast ul ul {
+   left:-50%;  
+}
+
+ul#css3menu0 li:hover>* {
+   display: block;
+}
+
+ul#css3menu0 li {
+   position:relative;
+   display:block;
+   white-space:nowrap;
+   font-size:0;
+   float:left;
+}
+
+ul#css3menu0 li:hover {
+   z-index:1;
+}
+
+ul#css3menu0 ul ul {
+   position:absolute;
+   left:80%;
+   top:-20%;
+}
+
+ul#css3menu0 ul ul ul{
+   position:absolute;
+   left:-130%;  
+}
+
+ul#css3menu0 ul ul ul ul{
+   position:absolute;
+   left:100%;
+}
+
+ul#css3menu0 {
+   font-size:0;
+   z-index:999;
+   position:relative;
+   display:inline-block;
+   zoom: 1;
+   padding:0;
+   *display:inline;
+}
+
+* html ul#css3menu0 li a {
+   display:inline-block;
+}
+
+ul#css3menu0>li {
+   margin:0;
+}
+
+ul#css3menu0 a:active, ul#css3menu0 a:focus {
+   outline-style:none;
+} 
+
+ul#css3menu0 a {    /*-------outer button style -----*/
+   display:block;
+   vertical-align:middle;
+   text-align:center;
+   text-decoration:none;
+   font:bold 16px 'Varela Round', sans-serif;
+   color:#3acec3;
+   text-shadow:#FFF 0 0 1px;
+   cursor:pointer;
+   padding:10px 20px;
+   background-color: #ffffff;
+   background-image:url("mainbk.png");
+   background-repeat:repeat;
+   background-position:0 0;
+   border-width: 1px;
+   border-style: solid;
+   border-color: #093a58;
+   box-shadow:0 0 5px #000000;
+}
+
+ul#css3menu0 ul li {
+   float:none;
+   margin:10px 0 0;
+}
+
+ul#css3menu0 ul a {
+   text-align:center;
+   padding:4px;
+   background-color:#FFFFFF;
+   background-image:none;
+   box-shadow:0 0 5px #000000;
+   /*-----
+   border-radius:5px;
+   -moz-border-radius:5px;
+   -webkit-border-radius:5px;
+   -----*/
+   font:18px 'Varela Round', sans-serif;
+   color:#3acec3;
+   text-decoration:none;
+}
+
+ul#css3menu0 li:hover>a,ul#css3menu0 li a.pressed {
+   background-color:#ffffff;
+   border-color:#093a58;
+   border-style:solid;
+   color:#093a58;
+   text-shadow:#FFF 0 0 1px;
+   background-image:url("mainbk.png");
+   background-position:0 100px;
+}
+
+ul#css3menu0 span {
+   display:block;
+   overflow:visible;
+   background-position:right center;
+   background-repeat:no-repeat;
+   padding-right:0px;
+}
+
+
+
+ul#css3menu0 > li.switch {
+   display:none;
+   cursor:pointer;
+   width:25px;
+   height:20px;
+   padding:10px;
+}
+
+ul#css3menu0 > li.switch:before {
+   content:"";
+   position:absolute;
+   display:block;
+   height:4px;
+   width:25px;
+   /*-----
+   border-radius:4px;
+   -----*/
+   background:#3acec3;
+   -moz-box-shadow:0 8px #3acec3, 0 16px #3acec3;
+   -webkit-box-shadow:0 8px #3acec3, 0 16px #3acec3;
+   box-shadow:0 8px #3acec3, 0 16px #3acec3;
+}
+
+ul#css3menu0 > li.switch:hover:before {
+   background:#093a58;
+   -moz-box-shadow:0 8px #093a58, 0 16px #093a58;
+   -webkit-box-shadow:0 8px #093a58, 0 16px #093a58;
+   box-shadow:0 8px #093a58, 0 16px #093a58;
+}
+
+.c3m-switch-input {
+   display:none;
+}
+
+ul#css3menu0 li:hover>a,ul#css3menu0 li > a.pressed {
+   background-color:#ffffff;
+   background-image:url("mainbk.png");
+   background-position:0 100px;
+   border-style:solid;
+   border-color:#093a58;
+   color:#093a58;
+   text-decoration:none;
+   text-shadow:#FFF 0 0 1px;
+}
+
+ul#css3menu0 ul li:hover>a,ul#css3menu0 ul li > a.pressed {
+   background-color:#FFFFFF;
+   background-image:none;
+   color:#093a58;
+   text-decoration:none;
+}
+
+ul#css3menu0 li.topfirst>a {
+   /*-----
+   border-radius:5px 0 0 5px;
+   -moz-border-radius:5px 0 0 5px;
+   -webkit-border-radius:5px;
+   -webkit-border-top-right-radius:0;
+   -webkit-border-bottom-right-radius:0;
+   -----*/
+}
+
+ul#css3menu0 li.toplast>a {
+   /*-----
+   border-radius:0 5px 5px 0;
+   -moz-border-radius:0 5px 5px 0;
+   -webkit-border-radius:0;
+   -webkit-border-top-right-radius:5px;
+   -webkit-border-bottom-right-radius:5px;
+   -----*/
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+   
+   ul#css3menu0 a {
+      font-size: 24px;
+      padding: 15px 40px
+   }
+   
+   ul#css3menu0 ul a {
+      font-size: 22px
+   }
+   
+   ul#css3menu0 ul {
+      padding: 20px
+   }
+   
+   ul#css3menu0 .topmenu ul {
+      left: -28%;
+   }
+
+   ul#css3menu0 .toplast ul {
+      left:-69%;  
+   }
+   
+   ul#css3menu0 .topfirst ul ul {
+      left: 90%;
+      top: -40%;
+   }
+
+   ul#css3menu0 .topmenu ul ul {
+      left: -64%;
+      top: -40%;
+   }
+
+   ul#css3menu0 .toplast ul ul {
+      left:-53%;
+      top: -40%;
+   }
+
+   
+}
+
+
+
+
+
+
+

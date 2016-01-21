@@ -10,8 +10,8 @@ body {
    font-family: 'Varela Round', sans-serif;
    line-height: 1.6;
    color: #3a3a3a;
-   background: url('http://bgfons.com/upload/paper_texture327.jpg') no-repeat top center;
-   text-align: center
+   text-align: center;
+   background:#dddddd;
 }
 
 li {
@@ -27,7 +27,7 @@ h3,
 h4,
 a,
 p{
-   color: #093a58;
+   color: #124678;
 }
 
 h2,
@@ -41,8 +41,7 @@ a {
    text-decoration: none;
 }
 
-img,
-iframe {
+img {
    max-width:100%; 
 }
 
@@ -56,40 +55,32 @@ iframe {
 
 
 .main-header {
-   height: 270px;
+   background:  #9dcbf6;   
    padding-top: 20px;
-   padding-bottom: 10px
+   padding-bottom: 10px;
 }
 
 .main-nav {
    list-style-type: none;
    text-transform: uppercase;
-   text-align: center;
-   margin-left: 15px;
-   margin-right: 15px;
 }
+  
 
 .main-nav li {
-   margin: 10px 30px 10px 30px;
-   background: #fff;
-   padding: 5px;
-   border-radius: 5px;
-   box-shadow: 0 0 6px rgba(0, 0, 0, .4);
+   padding: 10px;  
 }
 
 .main-nav a {
-   color: #2ea49b;
-   padding: 6px 20px;
+   color: #ffab67;
+   padding: 8px 20px;
 }
 
-
-
 .main-nav a.selected {
-   color:burlywood;
+   color: #fb7507;
 }
 
 .main-nav a:hover {
-   color: #093a58;
+   color: #124678;
 }
 
 
@@ -97,125 +88,118 @@ iframe {
 
 
 .container-one,
-.container-two {
+.container-two,
+.proj {
    padding-left: 1em;
    padding-right: 1em;
 }
 
 .container-one ul,
-.container-two ul{
-   padding: 0;
+.container-two ul,
+.projects {
+   padding: 0
 }
 
 .banner {
-   color: #fff;
-   background: url('https://upload.wikimedia.org/wikipedia/commons/a/aa/Hana_Road.neil916.jpg') no-repeat center center;
-   background-size:cover;
-   overflow: visible;
-   height: 300px;
-   clear: both;
-   text-align: center;
+   padding-top: 60px;
+   padding-bottom: 40px;
+   font-size: 1.5em
 }
 
-.col,
-.referral,
-.general,
-.contact {
-   text-align: center;
-  }
-
-.proj {
-   list-style: none;
-   text-align: center;
+.col p {
+   margin-bottom: 50px;
 }
 
 .secondary,
-.one,
 .general {
-   padding-top: 3em;
+   padding-top: 60px;
 }
 
-.tertiary,
-.six,
-.contact {
-   padding-bottom: 3em;
+.proj img {
+   border: 20px solid rgba(18,70,120, .70);
+   box-shadow: 0 0 8px rgba(9,58,88, .60);
+   background-color: #fff;
+   padding: 20px
 }
 
-.primary,
-.tertiary,
-.two,
-.three,
-.four,
-.five,
-.six,
-.referral,
-.contact {
-   padding-top: 2em;
+.proj h2{
+   padding-top: 15px;
+   font-size: 1.3em; 
+   margin: 0 auto;
+   max-width: 90%;
 }
 
-.col p,
 .proj p {
    margin: 0 auto;
+   max-width: 90%;
+   padding-top: 10px;
+   padding-bottom: 50px
+   
 }
-
-iframe {
-   border: 10px solid white;
-   box-shadow: 0 0 10px rgba(0, 0, 0, .4);
-   border-radius: 10px;
-   margin-top: 10px;
-   background-color: #fff;
-}
-
 
 /* ---- Page Elements ---- */
 
-.general {
-   padding-left: 2em;
-   padding-right: 2em
-}
-
-
 figure img {
-   margin-top: 10px;
    box-shadow: 0 0 15px rgba(0, 0, 0, .4);
-   border-radius: 10px;
-   width: 200px;
+   width: 225px;
 }
 
-.contact h2 {
-   padding-bottom: 20px
+.referral {
+   padding-bottom: 40px
 }
 
-.contact-info {
-   width: 240px;
+.contact {
+   max-width: 360px;
    margin: 0 auto;
+   padding-bottom: 30px;
+   padding-left: 1em;
+   padding-right: 1em;
 }
 
 .contact li {
-   display: block;
-   margin: 10px 30px 10px 30px;
-   background: #fff;
-   padding: 5px;
+   margin: 20px;
    border-radius: 5px;
-   box-shadow: 0 0 6px rgba(0, 0, 0, .4);
-}
-
-.contact img {
-   width: 25px;
-   margin-right: 5px;
+   box-shadow: inset 0 0 4px rgba(0, 0, 0, .4);
+   background-color: #fff; 
+   text-transform: uppercase;
+   font-size: 1.3em;
+   padding: 10px;
 }
 
 .contact a {
-   font-size: 1.2em
+   padding: 10px 20px 
 }
 
+a[href$="gmail.com"] {
+   background-image: url('../img/svg/email-sketch.svg');
+   background-repeat: no-repeat;
+   background-size: 24px;
+   padding: 0 0 0 40px;
+}
+
+a[href$="7670b9a2"] {
+   background-image: url('../img/svg/linkedin-sketch.svg');
+   background-repeat: no-repeat;
+   background-size: 24px;
+   padding: 0 0 0 40px;
+}
+
+a[href$="com/michaelgarza3"] {
+   background-image: url('../img/svg/treehouse-sketch.svg');
+   background-repeat: no-repeat;
+   background-size: 24px;
+   padding: 0 0 0 40px;
+}
+
+
+/*----- Footer -----*/
+
 .main-footer {
-   background: #2ea49b;
-   width: 100%;
-   height: 230px;
+   background: #ffab67;
+   padding-bottom: 40px;
    padding-top: 40px;
-   clear: both;
-   text-align: center;
+   text-align: center; 
+   margin-top: 80px
 }
 
 .main-footer li {
@@ -240,16 +224,21 @@ figure img {
 }
 
 .copyright p{
-   color: black;
+   color: #124678;
+   font-style: italic; 
    margin: 0 auto;
    margin-top: 20px;
    margin-bottom: 10px;
 }
 
 .top {
-   color: darkslategrey;
+   color: #9dcbf6;
    font-size: .8em;
    padding: 5px;
+}
+
+.top:hover {
+   color: #124678;
 }
 
 
@@ -262,80 +251,58 @@ figure img {
 
   
    .main-header {
-      height: 140px; 
+      padding-bottom: 20px;
+      padding-left: 1em;
    }
    
    .name {
+      float: left;
       text-align: left;
       font-size: 1.3em;
-      padding-top: 10px
+      margin-top: 10px;
    }
    
    .main-nav {
       float: right;
-      margin: 0 auto;
+      margin: 0;
+      text-align: right;
    }
 
    .main-nav li {
       padding: 0;
-      background: none;
       margin: 10px;
-      box-shadow: none;
    } 
-
-   .container-one,
-   .container-two,{
-      width: 100%;
-      margin: 0 auto;
-      padding-left: 1.5em;
-      padding-right: 1.5em;
+   
+   .main-nav a {
+      padding: 8px 0 8px 10px;
+   }
+ 
+   .col {
+      text-align: left;   
    }
    
-   .name,
    .proj {
       float: left;
-   }
-
-   
-   .col {
-      padding-left: 2em;
-      padding-right: 2em
-      
+      width: 50%; 
+      text-align: left;
    }
    
-   .proj {
-      width: 50%;
-      padding-left: 1em;
-      padding-right: 1em;
+   .referral,
+   .contact {
+      text-align: center;
    }
    
+   .secondary,
+   .primary,
+   .tertiary,
    .general {
+      max-width: 650px;
+      margin: 0 auto;
       padding-left: 4em;
       padding-right: 4em;
-   }
+   }   
    
-   .two {
-      padding-top: 3em;
-   }
    
-   .main-footer {
-      height: 175px;
-      padding-left: 1em;
-      padding-right: 2em;
-   }
-   
-   .social {
-      float: left;
-      width: 50%;
-      padding-top: 20px; 
-   }
-   
-   .copyright {
-      float: right;
-      width: 50%; 
-   }
-     
-
 /* ---- Float clearfix ---- */
 
 	.clearfix::after {
@@ -350,7 +317,7 @@ figure img {
    
    
    body {
-      padding-top: 100px;
+      padding-top: 90px;
       
    }
 
@@ -360,54 +327,66 @@ figure img {
       width: 100%;
       top: 0;
       z-index: 1000;
-      background-color: #fff;
-      height: 100px;
-      background: url('http://bgfons.com/upload/paper_texture327.jpg') no-repeat top center;
+      height: 90px;
       padding-top: 5px;
+   }
+   
+   .name {
+      margin-top: 0;
    }
    
    .main-nav li {
       display: inline-block;
-      padding: 30px 0;
-      font-size: 1.1em;
+      margin-top: 20px;
+      font-size: 1.4em;
    } 
    
    .container-one,
    .container-two {
-      padding-left: 2em;
-      padding-right: 2em;
+      padding-left: 1em;
+      padding-right: 1em;
    }
    
-   .secondary,
-   .primary,
-   .referral,
-   .contact {
-      width: 50%
+   .proj {
+      padding-left: 15px;
+      padding-right: 15px;
    }
    
    .secondary,
    .referral {
-      float: left
+      float: left;
+      width: 48%;
    }
    
    .primary,
    .contact {
-      float: right
+      float: right;
+      width: 48%;
+   }
+   
+   .referral {
+      padding-left: 3em;
+      margin-left: 30px;
+   }
+   
+   .contact {
+      padding-right: 3em;
+      margin-right: 30px
+   }
+   
+   .secondary {
+      padding-right: 1em
+   }
+   
+   .primary {
+      padding-top: 60px;
+      padding-left: 1em
    }
    
    .tertiary {
       clear: both;
-   }
-   
-   .primary {
-      padding-top: 3em;
-   }
-   
-   .contact li {
-      padding: 8px
-   }
-   
-   
+   } 
+  
 }
 
 @media (min-width: 1100px) {
@@ -418,47 +397,54 @@ figure img {
       margin: 0 auto;
 	}
    
-   .secondary,
+   .proj {
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+   
+   .secondary {  
+      float: left;
+      width: 32%;
+   }
+   
    .primary {
-      width: 27%;
-      float: left
+      float: left;
+      width: 26%;
+      padding-right: 1em
    }
     
    .tertiary {
-      width: 44%;
+      width: 42%;
       clear: none;
-      float: right;
-      
-   }
-   
-   .proj {
-      width: 33.3%;
-      padding-left: 1.5em;
-      padding-right: 1.5em;
+      float: right; 
+      padding-left: 2em;
    }
    
    .general {
      float: left;
-     width: 40%; 
-   }
-   
-   .secondary,
-   .primary,
-   .referral,
-   .contact {
-      width: 30%;
-      padding-bottom: 3em;
-   }
-   
-    
-   
-   .tertiary,
-   .three,
-   .referral,
-   .contact{
-      padding-top: 3em;
+     width: 28%;
+      padding-right: 1em;
    }
 
+   .referral {
+      width: 28%;
+      padding-bottom: 50px;
+      padding-left: 1em;
+   } 
+   
+   .contact {
+      float: right;
+      width: 34%;
+      padding-bottom: 50px;
+   }
+   
+   .tertiary,
+   .referral,
+   .contact{
+      padding-top: 60px;
+   }
+   
+   
 }
    
  
